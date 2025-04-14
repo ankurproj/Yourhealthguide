@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health Articles - HealthCare</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="dashboard.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.0/chart.min.js"></script>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <h1>YourHealthGuide</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="articles.html" class="active">Articles</a></li>
+                <li><a href="healthtips.html">Health Tips</a></li>
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <main class="articles-page">
+        <section class="articles-header">
+            <h1>Health Articles</h1>
+            <p>Stay informed with the latest health news and research</p>
+        </section>
+
+        <section class="articles-filters">
+            <section class="search-section">
+                <div class="search-container">
+                    <input type="text" id="searchInput" placeholder="Search health tips...">
+                    <button><i class="fas fa-search"></i></button>
+                </div>
+            </section>
+            <div class="category-filters">
+                <button class="filter-btn active" data-category="all">All</button>
+                <button class="filter-btn" data-category="disease">Diseases</button>
+                <button class="filter-btn" data-category="prevention">Prevention</button>
+                <button class="filter-btn" data-category="research">Research</button>
+            </div>
+        </section>
+
+        <section class="articles-grid" id="articlesGrid">
+            <!-- Articles will be loaded dynamically -->
+        </section>
+
+        <div class="load-more-container">
+            <button class="load-more-btn" id="loadMoreBtn">
+                <i class="fas fa-arrow-down"></i>
+                Load More Articles
+            </button>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>About Us</h3>
+                <p>YOURHEALTHGUIDE.COM</p>
+                <p>Dedicated to providing accurate and reliable health information.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="articles.html">Articles</a></li>
+                    <li><a href="healthtips.html">Health Tips</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p>Email: ankur.code0@gmail.com</p>
+                <p>Phone: +916207389419</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 HealthCare. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
